@@ -1,116 +1,16 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-		<title>reveal.js</title>
-
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-
-				<section>
-					<section>
-						<h1>How To Github</h1>
-						<p>
-							<small>Created by <a href="https://rohitmusti.github.io/">Rohit Musti</a> and <a href="https://github.com/sarahbland7">Sarah Bland</a></small>
-						</p>
-					</section>
-				</section>
-
-				<section>
-					<h2>Today's Workshop</h2>
-					<ol>
-						<li> Intro to Github + set up accounts </li>
-						<li> <p class="fragment"> Basic commands (practice with the command line) </p> </li>
-						<li> <p class="fragment"> Branching (with practice)</p> </li>
-						<li> <p class="fragment"> Merging (with practice)</p> </li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>What is Github?</h2>
-					<p>Back up</p>
-					<p class="fragment">Collaborate</p>
-					<p class="fragment">Share</p>
-				</section>
-
-				<section>
-					<h2>Set up accounts</h2>
-					<ol>
-						<li> Who needs to make a Github account? </li>
-						<li> <p class="fragment"> Go to https://github.com </p> </li>
-						<li> <p class="fragment"> Click on "Sign up" in the top right-hand corner </p> </li>
-						<li> <p class="fragment"> Enter a username, email, and password </p> </li>
-					</ol>
-				</section>
-
-				<section>
-					<section>
-						<h2>Commands</h2>
-					</section>
-					<section>
-						<h2>Clone</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-							git clone https://github.com/rohitmusti/teaching-github.git
-						</code></pre>
-						<p><small>Literally creates a "clone" of the repository on the user's local computer</small></p>
-					</section>
-					<section>
-						<h2>Add</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-							git add .
-						</code></pre>
-						<pre><code class="hljs" data-trim contenteditable>
-							git add filename
-						</code></pre>
-						<p><small>Allows for fine control of which files should be added to the group to be saved</small></p>
-					</section>
-
-					<section>
-						<h2>Commit</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-							git commit -a -m "Message Here"
-						</code></pre>
-						<p><small>The -a flag does the job of the previous add instruction</small></p>
-						<p><small>The -m flag allows for the version being "committed" to have a message stored with it</small></p>
-
-					</section>
-				</section>
-			</div>
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+  <title>Merging!</title>
+</head>
+<body>
+<h1>This is part of the merging practice</h1>
+<p id= "merge"></p>
+<script src="merging.js"></script>
+</body>
 </html>
